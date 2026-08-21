@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>推しコレクション</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    ============================================================
+    コードリテラシーワークショップ Session 5 - Git & ターミナル基礎
+    スターターファイル（S4未参加／ファイル紛失の方向け）
+
+    このセットは「Session 4 が終わった状態」です。
+    5ファイル（index.html / style.css / script.js / script.ts /
+    tsconfig.json）を同じフォルダに置いてください。
+    Session 5 では、このフォルダをGitで記録してGitHubに公開します。
+    ============================================================
+  -->
+</head>
+<body>
+
+  <header>
+    <h1 id="site-title">推しコレクション</h1>
+    <p class="site-description">好きなものを集めたサイトです。テーマはなんでもOK！</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>アイテム一覧</h2>
+
+      <div class="item-card">
+        <img src="https://placehold.co/400x300/3DB7E4/FFFFFF?text=推しの画像" alt="アイテムの画像">
+        <h3 class="item-title">アイテム名をここに書く</h3>
+        <p class="item-description">
+          このアイテムの説明文を書きます。
+          どんなものか、なぜ好きなのかなどを書いてみましょう。
+        </p>
+        <a href="https://example.com" target="_blank">詳しく見る</a>
+      </div>
+
+      <div class="item-card">
+        <img src="https://placehold.co/400x300/50DAB0/FFFFFF?text=推しの画像" alt="アイテムの画像">
+        <h3 class="item-title">アイテム名をここに書く</h3>
+        <p class="item-description">
+          このアイテムの説明文を書きます。
+          好きなことを自由に書いてみましょう。
+        </p>
+        <a href="https://example.com" target="_blank">詳しく見る</a>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>リアクション</h2>
+      <p>このサイトを見てどう思いましたか？</p>
+
+      <form class="reaction-form">
+        <label><input type="radio" name="reaction" value="like"> 好き！</label>
+        <label><input type="radio" name="reaction" value="want"> 気になる</label>
+        <label><input type="radio" name="reaction" value="wow"> すごい！</label>
+        <button type="button" class="submit-btn">送る</button>
+      </form>
+
+      <p id="form-message"></p>
+
+      <button id="like-btn" type="button" class="submit-btn">❤️ いいね</button>
+      <span id="like-count">0</span>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 推しコレクション</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
